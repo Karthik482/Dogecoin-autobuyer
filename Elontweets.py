@@ -55,7 +55,7 @@ def buy_doge(symbol, quantity):
 def main():
     login_robin("Enter robinhood username", "Enter robinhood password")
     while True:
-        elon_tweets = api.user_timeline("0947b77e045042e")
+        elon_tweets = api.user_timeline("elonmusk")
         for tweet in elon_tweets[:1]:
             try:
                 # tweet comes in utc time zone
