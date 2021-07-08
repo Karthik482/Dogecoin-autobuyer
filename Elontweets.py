@@ -65,9 +65,9 @@ def main():
                 now = datetime.utcnow()
                 # difference in seconds between current local time and tweet time
                 diff_sec = ((now - twt_time).total_seconds())
-                # buy only if tweet was posted less than 1 second
+                # buy only if tweet was posted less than 1 second ago
                 if diff_sec < 1:
-                    #search if tweet as "dog" character  mentioned in his tweet
+                    #search if tweet has "dog" character  mentioned in his tweet
                     TorF = bool(re.search("dog", txt_conv, re.IGNORECASE))
                     if TorF:
                         #if mentioned buy 1 coin of Doge
